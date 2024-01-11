@@ -1,1 +1,2 @@
 py AdyaPatternFinder.py
+PAUSE
