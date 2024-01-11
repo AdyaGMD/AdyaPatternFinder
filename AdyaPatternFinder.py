@@ -11,7 +11,7 @@ def find_byte_sequence(file_path, byte_sequence):
     match = re.search(regex_pattern, content.hex())
     if match:
         start_position = match.start() // 2  # Convert byte offset to character offset
-        return start_position # Adjust for wildcard positions
+        return start_position + 0xC00 # Adjust for wildcard positions
     else:
         return None
 
